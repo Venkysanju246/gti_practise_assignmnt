@@ -1,15 +1,15 @@
 
 
 function Checkprime(num){
-    let count=0
+    let factors=0
    for(let i =0;i<=num;i++){
-    if(num%i){
-        count++
+    if(num%i==0){
+        factors++
     }
-   }if(count==2){
+   }if(factors==2){
     console.log(num, "Prime")
    }else {
     console.log(num, "Not a prime")
    }
 }
-
+Checkprime(17)
